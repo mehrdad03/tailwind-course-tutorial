@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  },
+  "scripts": {
+    "build:spacing":"npx tailwindcss -i ./src/input.css -o ./01-Spacing/app.css --content ./01-Spacing/index.html --watch",
+    "build:sizing":"npx tailwindcss -i ./src/input.css -o ./02-Sizing/app.css --content ./02-Sizing/index.html --watch",
+    "build:typography":"npx tailwindcss -i ./src/input.css -o ./03-Typography/app.css --content ./03-Typography/index.html --watch",
+    "build:backgrounds":"npx tailwindcss -i ./src/input.css -o ./04-Backgrounds/app.css --content ./04-Backgrounds/index.html --watch",
+    "build:borders":"npx tailwindcss -i ./src/input.css -o ./05-Borders/app.css --content ./05-Borders/index.html --watch",
+    "build:effects":"npx tailwindcss -i ./src/input.css -o ./06-Effects/app.css --content ./06-Effects/index.html --watch",
+    "build:filters":"npx tailwindcss -i ./src/input.css -o ./07-Filters/app.css --content ./07-Filters/index.html --watch",
+    "build:tables":"npx tailwindcss -i ./src/input.css -o ./08-Tables/app.css --content ./08-Tables/index.html --watch",
+    "build:transitions_animation":"npx tailwindcss -i ./src/input.css -o ./09-Transitions_Animation/app.css --content ./09-Transitions_Animation/index.html --watch",
+    "build:transforms":"npx tailwindcss -i ./src/input.css -o ./10-Transforms/app.css --content ./10-Transforms/index.html --watch",
+    "build:interactivity":"npx tailwindcss -i ./src/input.css -o ./11-Interactivity/app.css --content ./11-Interactivity/index.html --watch",
+    "build:svg":"npx tailwindcss -i ./src/input.css -o ./12-SVG/app.css --content ./12-SVG/index.html --watch",
+    "build:layout":"npx tailwindcss -i ./src/input.css -o ./13-Layout/app.css --content ./13-Layout/index.html --watch",
+    "build:flexbox_grid":"npx tailwindcss -i ./src/input.css -o ./14-Flexbox_Grid/app.css --content ./14-Flexbox_Grid/index.html --watch",
+    "build:all": "npm run build:spacing && npm run build:sizing && npm run build:typography && npm run build:backgrounds && npm run build:borders && npm run build:effects && npm run build:filters && npm run build:tables && npm run build:transitions_animation && npm run build:transforms && npm run build:interactivity && npm run build:svg && npm run build:layout && npm run build:flexbox_grid"
+
+  }
+}
