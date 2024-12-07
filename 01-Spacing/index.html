@@ -1,12 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="p-5">
+    <h1 class="font-bold text-4xl text-blue-950 mb-3">Spacing</h1>
+    <br />
+    <h2 class="font-bold text-xl text-red-950 mb-3">Padding</h2>
+
+    <!-- Add padding to a single side -->
+    <!-- pt-*, pr-*, pb-*, and pl-* -->
+
+    <div class="bg-black text-white pt-4">Lorem, ipsum.</div>
+    <br />
+    <div class="bg-black text-white pb-4">Lorem, ipsum.</div>
+    <br />
+    <div class="bg-black text-white pr-4">Lorem, ipsum.</div>
+    <br />
+    <div class="bg-black text-white pl-4">Lorem, ipsum.</div>
+    <br />
+    <br />
+    <!-- Add horizontal padding -->
+    <!-- px-* -->
+    <div class="bg-purple-900 text-white px-44">Lorem, ipsum.</div>
+    <br />
+    <!-- py-* -->
+    <div class="bg-purple-900 text-white py-10">Lorem, ipsum.</div>
+    <!-- Add vertical padding -->
+    <br />
+    <br />
+    <!-- Add padding to all sides -->
+    <!-- p-* -->
+    <div class="bg-purple-900 text-white p-10">Lorem, ipsum.</div>
+    <br />
+    <!-- Using logical properties -->
+    <!-- ps-* and pe-*  padding-inline-start and padding-inline-end -->
+    <div dir="ltr">
+      <div class="bg-green-800 text-white ps-10">Lorem, ipsum.</div>
+      <div class="bg-green-800 text-white pe-10">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <div dir="rtl">
+      <div class="bg-green-800 text-white ps-10">Lorem, ipsum.</div>
+      <div class="bg-green-800 text-white pe-10">Lorem, ipsum.</div>
+    </div>
+
+    <br />
+    <!-- Hover, focus, and other states -->
+    <!-- hover : py-8 -->
+    <div class="bg-red-800 text-white hover:p-5">Lorem, ipsum.</div>
+    <br />
+    <!-- Breakpoints and media queries -->
+    <!-- md : py-8 -->
+    <div class="bg-black text-white md:p-5">Lorem, ipsum.</div>
+    <br />
+    <!-- Customizing your theme -->
+    <div class="bg-blue-800 text-white p-20">Lorem, ipsum.</div>
+    <br />
+
+    <!-- Arbitrary values -->
+    <div class="bg-blue-800 text-white p-[10rem]">Lorem, ipsum.</div>
+
+    <br />
+    <hr />
+    <br />
+
+    <!-- *************** Margin **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Margin</h2>
+    <!-- *************** Margin **************** -->
+
+    <!--Add margin to a single side -->
+    <!-- mt-*, mr-*, mb-*, and ml-* -->
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white mt-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white mb-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white mr-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white ml-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+
+    <!-- Add horizontal margin -->
+    <!-- mx-* -->
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white mx-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <!-- Add vertical margin -->
+    <!-- my-* -->
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white my-4">Lorem, ipsum.</div>
+    </div>
+    <!-- Add margin to all sides -->
+    <!-- m-* -->
+    <br />
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white m-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <!-- Using negative values -->
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white -mt-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <!-- Using logical properties -->
+    <!-- ms-* and me-* margin-inline-start and margin-inline-end -->
+    <div class="bg-red-700 p-3" dir="ltr">
+      <div class="bg-black text-white me-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <div class="bg-red-700 p-3" dir="rtl">
+      <div class="bg-black text-white me-4">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <!-- hover, focus, and other states -->
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white hover:m-5">Lorem, ipsum.</div>
+    </div>
+    <!-- Customizing your theme -->
+    <br />
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white m-13">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <!-- Arbitrary values -->
+    <div class="bg-red-700 p-3">
+      <div class="bg-black text-white -mb-[2rem]">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <br />
+    <hr />
+    <br />
+
+    <!-- *************** Space Between **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Space Between</h2>
+    <!-- *************** Space Between **************** -->
+
+    <!-- Add horizontal space between children -->
+    <!-- space-y-* -->
+
+    <div class="bg-blue-700 p-5 space-y-3">
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+    </div>
+    <br />
+    <!-- Add vertical space between children -->
+    <!-- space-x-* -->
+    <div class="bg-blue-700 p-5 flex space-x-5">
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+    </div>
+    <br>
+    <!-- Hover, focus, and other states -->
+    <!-- hover : space-x-8 -->
+    <div class="bg-blue-700 p-5 flex space-x-0 hover:space-x-3">
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+    </div>
+    <br />
+    <!-- Breakpoints and media queries -->
+    <div class="bg-blue-700 p-5 flex space-x-0 md:space-x-3">
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+    </div>
+    <br />
+    <!-- Customizing your theme -->
+    <div class="bg-blue-700 p-5 flex space-x-6.5">
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+    </div>
+    <br />
+    <br />
+    <!-- Arbitrary values -->
+
+    <div class="bg-blue-700 p-5 flex space-x-[30px]">
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+      <div class="bg-red-700 text-white">Lorem, ipsum dolor.</div>
+    </div>
+    <br />
+    <br />
+    <br />
+  
+
+ 
+  </body>
 </html>
