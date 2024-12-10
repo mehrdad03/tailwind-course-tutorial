@@ -1,12 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-Backgrounds</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="p-5">
+    <h1 class="font-bold text-4xl text-blue-950 mb-3">Backgrounds</h1>
+    <br />
+    <!-- *************** Background Attachment **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Background Attachment</h2>
+    <!-- *************** Background Attachment **************** -->
+     <br>
+     <br>
+    <!-- background-attachment: fixed -->
+    <div class="bg-fixed h-64 bg-cover bg-center overflow-y-scroll" style="background-image: url('../src/dubai.jpg');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- background-attachment: local -->
+    <div class="bg-local h-64 bg-cover bg-center overflow-y-scroll" style="background-image: url('../src/dubai.jpg');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- background-attachment: scroll -->
+
+    <div class="bg-scroll h-64 bg-cover bg-center overflow-y-scroll" style="background-image: url('../src/dubai.jpg');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+
+
+
+    <br>
+    <br>
+    <!-- *************** Background Clip **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Background Clip</h2>
+    <!-- *************** Background Clip **************** -->
+     <!--  background-clip: border-box -->
+     <br>
+     <br>
+     <div class="bg-clip-border bg-blue-500 border-4 border-red-400 p-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, totam.
+     </div>
+     <!-- background-clip: padding-box -->
+     <br>
+     <br>
+
+     <div class="bg-clip-padding bg-blue-500 border-4 border-red-400 p-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, totam.
+     </div>
+
+     <br>
+     <br>
+     <!--  background-clip: content-box -->
+     <div class="bg-clip-content bg-blue-500 border-4 border-red-400 p-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, totam.
+     </div>
+     <br>
+     <br>
+     <!--  background-clip: text -->
+     <div class="bg-clip-text text-transparent font-black bg-red-500 border-4 border-red-400 p-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, totam.
+     </div>
+     <br>
+     <br>
+
+    <!-- *************** Background Color **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Background Color</h2>
+    <!-- *************** Background Color **************** -->
+     <!-- bg-* -->
+    <div class="bg-fuchsia-50">loprem2  </div>
+    <br>
+    <div class="bg-fuchsia-100">loprem2  </div>
+    <br>
+    <div class="bg-fuchsia-200">loprem2  </div>
+    <br>
+    <div class="bg-fuchsia-300">loprem2  </div>
+    <br>
+    <div class="bg-fuchsia-400">loprem2  </div>
+    <br>
+    <div class="bg-fuchsia-500">loprem2  </div>
+    <br>
+    <div class="bg-fuchsia-600">loprem2  </div>
+
+      <br>
+      <br>
+
+    <!-- Changing the opacity -->
+
+    <div class="bg-fuchsia-950/100">loprem2  </div>
+
+    <br>
+    <br>
+    <!-- Hover, focus, and other states -->
+
+    <div class="bg-black md:bg-fuchsia-500 text-white">loprem2  </div>
+
+    <br>
+    <br>
+    <!-- Customizing your theme -->
+
+    <div class="bg-regal-blue text-white">loprem2  </div>
+
+    <br>
+    <br>
+    <!-- Arbitrary values -->
+
+    <div class="bg-[#50d71e] text-white">loprem2  </div>
+
+    <br>
+    <br>
+
+
+
+
+    <!-- *************** Background Position **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Background Position</h2>
+    <!-- *************** Background Position **************** -->
+    <div class="bg-local h-64  bg-left overflow-y-scroll" style="background-image: url('../src/dubai.jpg');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="bg-local h-64  bg-top overflow-y-scroll" style="background-image: url('../src/dubai.jpg');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="bg-local h-64  bg-right overflow-y-scroll" style="background-image: url('../src/dubai.jpg');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="bg-local h-64  bg-bottom overflow-y-scroll" style="background-image: url('../src/dubai.jpg');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- *************** Background Repeat **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Background Repeat</h2>
+    <!-- *************** Background Repeat **************** -->
+    <div class="bg-local bg-repeat h-64  bg-bottom overflow-y-scroll" style="background-image: url('../src/checked.png');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+     
+    <div class="bg-local bg-no-repeat h-64  bg-bottom overflow-y-scroll" style="background-image: url('../src/checked.png');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+     
+     
+    <div class="bg-local bg-repeat-y h-64  bg-bottom overflow-y-scroll" style="background-image: url('../src/checked.png');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="bg-local bg-repeat-x hover:bg-repeat-y h-64  bg-bottom overflow-y-scroll" style="background-image: url('../src/checked.png');">
+      <div class="h-96 p-3 text-white">
+        Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+    <br>
+    <br>
+     
+
+    <!-- *************** Background Size **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Background Size</h2>
+    <!-- *************** Background Size **************** -->
+     
+
+    <div class=" h-lvh bg-auto " style="background-image: url('../src/dubai.jpg');">
+     
+    </div>
+    <br>
+    <br>
+    <div class=" h-lvh bg-cover " style="background-image: url('../src/dubai.jpg');">
+     
+    </div>
+    <br>
+    <br>
+    <div class=" h-lvh bg-contain " style="background-image: url('../src/dubai.jpg');">
+     
+    </div>
+    <br>
+    <br>
+    <!-- *************** Background Image **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Background Image</h2>
+    <!-- *************** Background Image **************** -->
+
+    <div class=" h-40 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+    <br>
+    <div class=" h-40 bg-gradient-to-r from-sky-500 to-fuchsia-500"></div>
+    <br>
+    <br>
+    <div class="bg-gradient-to-r bg-clip-text text-transparent text-5xl font-black from-sky-500 to-fuchsia-500">
+      Lorem ipsum dolor sit.
+    </div>
+    <br>
+    <br>
+
+    <!-- *************** Gradient Color Stops **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Gradient Color Stops</h2>
+    <!-- *************** Gradient Color Stops **************** -->
+
+    <div class=" h-40 bg-gradient-to-r from-sky-500"></div>
+    <br>
+    <div class=" h-40 bg-gradient-to-r from-sky-500 from-10% via-amber-500 via-30% to-pink-500 to-90%"></div>
+
+    <br>
+    <br>
+    <button class="bg-gradient-to-r p-3 from-teal-500 to-blue-500  hover:from-pink-500 hover:to-orange-500">click</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
 </html>

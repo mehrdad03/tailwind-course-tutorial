@@ -553,3 +553,125 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+@font-face {
+  font-family: 'vazir';
+
+  src: url(../src/fonts/Vazir.eot);
+
+  src: url(../src/fonts/Vazir.woff) format('woff');
+
+  src: url(../src/fonts/Vazir.woff2) format('woff2');
+
+  src: url(../src/fonts/Vazir.ttf) format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vazir';
+
+  src: url(../src/fonts/Vazir-Bold.eot);
+
+  src: url(../src/fonts/Vazir-Bold.woff) format('woff');
+
+  src: url(../src/fonts/Vazir-Bold.woff2) format('woff2');
+
+  src: url(../src/fonts/Vazir-Bold.ttf) format('truetype');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-local {
+  background-attachment: local;
+}
+
+.bg-scroll {
+  background-attachment: scroll;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-blue-950 {
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity, 1));
+}
+
+.text-red-950 {
+  --tw-text-opacity: 1;
+  color: rgb(69 10 10 / var(--tw-text-opacity, 1));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
