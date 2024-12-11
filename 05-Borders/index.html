@@ -1,12 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05-Borders</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="p-5">
+    <h1 class="font-bold text-4xl text-blue-950 mb-3">Borders</h1>
+    <br />
+
+    <!-- *************** Border Radius **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Border Radius</h2>
+    <!-- *************** Border Radius **************** -->
+
+    <!-- Rounded corners -->
+    <!-- rounded-sm, rounded, or rounded-lg -->
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between">
+      <div class="bg-purple-700 w-20 h-20 rounded"></div>
+      <div class="bg-purple-700 w-20 h-20 rounded-md"></div>
+      <div class="bg-purple-700 w-20 h-20 rounded-lg"></div>
+      <div class="bg-purple-700 w-20 h-20 rounded-full"></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <!-- Pill buttons -->
+    <!-- rounded-full -->
+    <br />
+    <br />
+    <br />
+    <button class="text-white rounded-full bg-black p-2">save change</button>
+
+    <br />
+    <br />
+    <br />
+    <!-- No rounding -->
+    <!-- rounded-none -->
+    <br />
+    <br />
+    <br />
+    <button class="text-white rounded-none bg-black p-2">save change</button>
+
+    <br />
+    <br />
+    <br />
+    <!-- Rounding sides separately -->
+    <!-- rounded-t-*, rounded-r-*, rounded-b-*, and rounded-l-* -->
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between">
+      <div class="bg-red-700 w-20 h-20 rounded-t-lg"></div>
+      <div class="bg-red-700 w-20 h-20 rounded-r-lg"></div>
+      <div class="bg-red-700 w-20 h-20 rounded-b-lg"></div>
+      <div class="bg-red-700 w-20 h-20 rounded-l-lg"></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <!-- Using logical properties -->
+    <!-- rounded-s-*, rounded-e-*, rounded-ss-*, rounded-se-*, rounded-es-*, and rounded-ee-* -->
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between">
+      <div class="bg-amber-700 w-20 h-20 rounded-s-lg"></div>
+      <div class="bg-amber-700 w-20 h-20 rounded-e-lg"></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <!-- Hover, focus, and other states -->
+    <!-- hover:rounded-lg -->
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between">
+      <div class="bg-blue-700 w-20 h-20 rounded hover:rounded-full"></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <!-- Arbitrary values -->
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between">
+      <div class="bg-blue-700 w-20 h-20 rounded-[10.5px]"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- *************** Border Width **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Border Width</h2>
+    <!-- *************** Border Width **************** -->
+    <!-- All sides -->
+    <!-- border, border-0, border-2, border-4, or border-8 -->
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between space-x-5">
+      <div class="border-0 w-20 h-20"></div>
+      <div class="border w-20 h-20 g"></div>
+      <div class="border-2 w-20 h-20"></div>
+      <div class="border-4 w-20 h-20"></div>
+      <div class="border-8 w-20 h-20"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- Individual sides -->
+    <!-- border-*, border-*-0, border-*-2, border-*-4, or border-*-8 -->
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between space-x-5">
+      <div class="border-r-4 w-20 h-20"></div>
+      <div class="border-t-4 w-20 h-20 g"></div>
+      <div class="border-l-4 w-20 h-20"></div>
+      <div class="border-b-5 w-20 h-20"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- Horizontal and vertical sides -->
+    <!-- border-x-* and border-y-* -->
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between space-x-5">
+      <div class="border-y-4 w-20 h-20"></div>
+      <div class="border-x-4 w-20 h-20 g"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- Between elements -->
+    <!-- divide-x-* and divide-y-* -->
+    <br />
+    <br />
+    <br />
+    <div class="divide-y-2 divide-red-800">
+      <div class="p-3">Lorem, ipsum.</div>
+      <div class="p-3">Lorem, ipsum.</div>
+      <div class="p-3">Lorem, ipsum.</div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- *************** Border Color **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Border Color</h2>
+    <!-- *************** Border Color **************** -->
+    <br />
+    <br />
+    <br />
+    <!-- Setting the border color -->
+    <!-- border-* -->
+    <div class="p-3 border-4 border-red-800">Lorem, ipsum.</div>
+    <br />
+    <br />
+    <br />
+    <!-- Changing the opacity -->
+
+    <div class="p-3 border-4 border-red-800/30">Lorem, ipsum.</div>
+    <br />
+    <br />
+    <br />
+    <!-- Individual sides -->
+    <!-- border-t-*, border-r-*, border-b-*, and border-l-* -->
+
+    <div class="flex justify-between space-x-5">
+      <div
+        class="border-4 border-t-red-700 border-l-blue-800 border-b-amber-700 border-r-black w-20 h-20"
+      ></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- *************** Border Style **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Border Style</h2>
+    <!-- *************** Border Style **************** -->
+    <br />
+    <br />
+    <br />
+    <div class="bg-red-600 border-4 border-solid border-blue-600">
+      Lorem ipsum dolor sit.
+    </div>
+    <br />
+    <br />
+    <div class="bg-red-600 border-4 border-dashed border-blue-600">
+      Lorem ipsum dolor sit.
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="bg-red-600 border-4 border-double border-blue-600">
+      Lorem ipsum dolor sit.
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- *************** Outline Width **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Outline Width</h2>
+    <!-- *************** Outline Width **************** -->
+    <button class="outline outline-1 mb-3">Lorem ipsum dolor sit.</button>
+    <br />
+    <button class="outline outline-2 mb-3">Lorem ipsum dolor sit.</button>
+    <br />
+    <button class="outline outline-4 mb-3">Lorem ipsum dolor sit.</button>
+    <br />
+
+    <!-- *************** Outline Color **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Outline Color</h2>
+    <!-- *************** Outline Color **************** -->
+
+    <button class="outline outline-1 outline-blue-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+    <button class="outline outline-2 outline-red-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+    <button class="outline outline-4 outline-amber-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+
+    <!-- *************** Outline Style **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Outline Style</h2>
+    <!-- *************** Outline Style **************** -->
+
+    <button class="outline-dashed outline-1 outline-blue-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+    <button class="outline-dotted outline-2 outline-red-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+    <button class="outline-double outline-4 outline-amber-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+    <!-- *************** Outline Offset **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Outline Offset</h2>
+    <!-- *************** Outline Offset **************** -->
+
+    <button class="outline outline-2 outline-offset-0 outline-blue-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+    <button class="outline outline-2 outline-offset-2 outline-red-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+    <button class="outline outline-2 outline-offset-4 outline-amber-900 mb-3">
+      Lorem ipsum dolor sit.
+    </button>
+    <br />
+
+    <!-- *************** Ring Width & Ring Color & Ring Offset Width Ring Offset Color ** **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">
+      Ring Width & Ring Color & Ring Offset Width Ring Offset Color
+    </h2>
+    <!-- *************** Ring Width **************** -->
+
+    <div
+      class="p-4 border-4 border-blue-600 ring-4 ring-green-800 outline
+       ouline-2 outline-red-500"
+    >
+      Lorem, ipsum dolor.
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
 </html>
