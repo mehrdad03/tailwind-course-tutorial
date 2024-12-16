@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06-Effects</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="p-5">
+    <h1 class="font-bold text-4xl text-blue-950 mb-3">Effects</h1>
+    <br />
+
+    <!-- *************** Box Shadow **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Box Shadow</h2>
+    <!-- *************** Box Shadow **************** -->
+    <!-- shadow-sm, shadow, shadow-md, shadow-lg, shadow-xl, or shadow-2xl -->
+
+    <div class="flex justify-between">
+      <div class="w-32 h-32 bg-amber-300 shadow-md"></div>
+      <div class="w-32 h-32 bg-amber-300 shadow-lg"></div>
+      <div class="w-32 h-32 bg-amber-300 shadow-xl"></div>
+      <div class="w-32 h-32 bg-amber-300 shadow-2xl"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- shadow-inner -->
+    <div class="w-32 h-32 bg-amber-50 shadow-inner"></div>
+    <!-- Hover, focus, and other states -->
+    <br />
+    <br />
+    <br />
+    <div class="w-32 h-32 bg-amber-500 shadow-none hover:shadow-2xl"></div>
+
+    <!-- *************** Box Shadow Color **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Box Shadow Color</h2>
+    <!-- *************** Box Shadow Color **************** -->
+
+    <!-- shadow-* -->
+     <div class="flex justify-between">
+      <button class="rounded-md bg-cyan-500 shadow-lg p-3 shadow-cyan-500/50">click</button>
+      <button class="rounded-md bg-blue-500 shadow-lg p-3 shadow-blue-500/50">click</button>
+      <button class="rounded-md bg-purple-500 shadow-lg p-3 shadow-purple-500/50">click</button>
+     </div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- *************** Opacity **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Opacity</h2>
+    <!-- *************** Opacity **************** -->
+     <!-- opacity-* -->
+
+    <div class="flex justify-between">
+      <button class="rounded-md opacity-100 bg-cyan-500 shadow-lg p-3 shadow-cyan-500/50">click</button>
+      <button class="rounded-md opacity-75 bg-blue-500 shadow-lg p-3 shadow-blue-500/50">click</button>
+      <button class="rounded-md opacity-50 bg-purple-500 shadow-lg p-3 shadow-purple-500/50">click</button>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Mix Blend Mode **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Mix Blend Mode</h2>
+    <!-- *************** Mix Blend Mode **************** -->
+
+    <div class="flex justify-center -space-x-14">
+      <div class="mix-blend-multiply w-32 h-32 rounded-full bg-pink-500"></div>
+      <div class="mix-blend-multiply w-32 h-32 rounded-full bg-blue-500"></div>
+     </div>
+     <br />
+    <div class="flex justify-center -space-x-14">
+      <div class="mix-blend-screen w-32 h-32 rounded-full bg-pink-500"></div>
+      <div class="mix-blend-screen w-32 h-32 rounded-full bg-blue-500"></div>
+     </div>
+     <br />
+    <div class="flex justify-center -space-x-14">
+      <div class="mix-blend-overlay w-32 h-32 rounded-full bg-pink-500"></div>
+      <div class="mix-blend-overlay w-32 h-32 rounded-full bg-blue-500"></div>
+     </div>
+     <br />
+    <div class="flex justify-center -space-x-14">
+      <div class="mix-blend-exclusion w-32 h-32 rounded-full bg-pink-500"></div>
+      <div class="mix-blend-exclusion w-32 h-32 rounded-full bg-blue-500"></div>
+     </div>
+     <br />
+     <br />
+    <!-- *************** Background Blend Mode **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Background Blend Mode</h2>
+    <!-- *************** Background Blend Mode **************** -->
+
+    <div class="bg-cover bg-blend-multiply bg-red-400 h-svh bg-[url('../src/dubai.jpg')] "></div>
+    <br>
+    <div class="bg-cover bg-blend-screen bg-red-400 h-svh bg-[url('../src/dubai.jpg')] "></div>
+    <br>
+    <div class="bg-cover bg-blend-overlay bg-red-400 h-svh bg-[url('../src/dubai.jpg')] "></div>
+    <br>
+    <div class="bg-cover bg-blend-lighten bg-red-400 h-svh bg-[url('../src/dubai.jpg')] "></div>
+    <br>
+    <div class="bg-cover bg-blend-darken bg-red-400 h-svh bg-[url('../src/dubai.jpg')] "></div>
+    <br>
+    <div class="bg-cover bg-blend-exclusion bg-red-400 h-svh bg-[url('../src/dubai.jpg')] "></div>
+    <br>
+    <div class="bg-cover bg-blend-color bg-red-400 h-svh bg-[url('../src/dubai.jpg')] "></div>
+    <br>
+    <div class="bg-cover bg-blend-darken bg-red-400 h-svh bg-[url('../src/dubai.jpg')] "></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
 </html>
