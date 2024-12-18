@@ -1,12 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08-Tables</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="p-5">
+    <h1 class="font-bold text-4xl text-blue-950 mb-3">Tables</h1>
+    <br />
+
+    <!-- *************** Border Collapse **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Border Collapse</h2>
+    <!-- *************** Border Collapse **************** -->
+
+    <!-- border-collapse -->
+    <table class="border-collapse border border-slate-500">
+      <thead>
+        <tr>
+          <th class="border border-slate-600">State</th>
+          <th class="border border-slate-600">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700">Indiana</td>
+          <td class="border border-slate-700">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Ohio</td>
+          <td class="border border-slate-700">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Michigan</td>
+          <td class="border border-slate-700">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+
+    <!-- border-separate -->
+
+    <table class="border-separate border border-red-500">
+      <thead>
+        <tr>
+          <th class="border border-slate-600">State</th>
+          <th class="border border-slate-600">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700">Indiana</td>
+          <td class="border border-slate-700">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Ohio</td>
+          <td class="border border-slate-700">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Michigan</td>
+          <td class="border border-slate-700">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <!-- *************** Border Spacing **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Border Spacing</h2>
+    <!-- *************** Border Spacing **************** -->
+    <!-- border-spacing-* -->
+
+    <table
+      class="border-separate border border-spacing-x-2 border-spacing-y-8 border-blue-500"
+    >
+      <thead>
+        <tr>
+          <th class="border border-slate-600">State</th>
+          <th class="border border-slate-600">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700">Indiana</td>
+          <td class="border border-slate-700">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Ohio</td>
+          <td class="border border-slate-700">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Michigan</td>
+          <td class="border border-slate-700">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- *************** Table Layout **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Table Layout</h2>
+    <!-- *************** Table Layout **************** -->
+
+    <!-- table-auto -->
+    <table class="border-collapse table-auto border border-slate-500 w-full">
+      <thead>
+        <tr>
+          <th class="border border-slate-600">State</th>
+          <th class="border border-slate-600">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatem, soluta?
+          </td>
+          <td class="border border-slate-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatem, soluta? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Voluptatem, soluta?
+          </td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Ohio</td>
+          <td class="border border-slate-700">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Michigan</td>
+          <td class="border border-slate-700">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <!-- table-fixed -->
+    <table class="border-collapse table-fixed border border-slate-500 w-full">
+      <thead>
+        <tr>
+          <th class="border w-3/4 border-slate-600">State</th>
+          <th class="border w-1/4 border-slate-600">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatem, soluta?
+          </td>
+          <td class="border border-slate-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatem, soluta? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Voluptatem, soluta?
+          </td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Ohio</td>
+          <td class="border border-slate-700">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Michigan</td>
+          <td class="border border-slate-700">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+    <!-- *************** Caption Side **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Caption Side</h2>
+    <!-- *************** Caption Side **************** -->
+    <table class="border-collapse table-fixed caption-bottom border border-slate-500 w-full">
+      <caption class="text-red-600 font-bold">
+        Lorem ipsum dolor sit amet consectetur a
+      </caption>
+
+      <thead>
+        <tr>
+          <th class="border w-3/4 border-slate-600">State</th>
+          <th class="border w-1/4 border-slate-600">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatem, soluta?
+          </td>
+          <td class="border border-slate-700">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptatem, soluta? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Voluptatem, soluta?
+          </td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Ohio</td>
+          <td class="border border-slate-700">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700">Michigan</td>
+          <td class="border border-slate-700">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <button class="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...">
+      Save Changes
+    </button>
+  </body>
 </html>
