@@ -1,12 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07-Filters</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="p-5">
+    <h1 class="font-bold text-4xl text-blue-950 mb-3">Filters</h1>
+    <br />
+
+    <!-- *************** Blur **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Blur</h2>
+    <!-- *************** Blur **************** -->
+    <!-- blur-* -->
+    <br />
+    <br />
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-32 blur-none h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 blur-sm h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 blur-md h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 blur-lg h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 blur-xl h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 blur-2xl h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+    </div>
+
+    <br />
+    <br />
+    <!-- *************** Brightness **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Brightness</h2>
+    <!-- *************** Brightness **************** -->
+    <br />
+    <br />
+    <!-- brightness-* -->
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-32 brightness-0 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 brightness- h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 brightness-75 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 brightness-90 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 brightness-100 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 brightness-105 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 brightness-110 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+    </div>
+    <br />
+    <br />
+
+    <!-- *************** Contrast **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Contrast</h2>
+    <!-- *************** Contrast **************** -->
+
+    <br />
+    <br />
+    <!--contrast-* -->
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-32 contrast-0 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 contrast-50 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 contrast-75 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 contrast-100 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 contrast-125 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 contrast-150 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 contrast-200 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Drop Shadow **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Drop Shadow</h2>
+    <!-- *************** Drop Shadow **************** -->
+
+    <br />
+    <br />
+    <!--Drop Shadow-* Vs box shadow -->
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-[250px] contrast-0 shadow-2xl h-40 bg-cover bg-[url('../src/tailwind.png')]"
+      ></div>
+      <div
+        class="w-[250px] contrast-50 shadow-2xl h-40 bg-cover bg-[url('../src/tailwind.png')]"
+      ></div>
+      <div
+        class="w-[250px] contrast-75 h-40 drop-shadow-2xl bg-cover bg-[url('../src/tailwind.png')]"
+      ></div>
+      <div
+        class="w-[250px] contrast-100 h-40 drop-shadow-2xl bg-cover bg-[url('../src/tailwind.png')]"
+      ></div>
+    </div>
+    <br />
+    <br />
+
+    <!-- *************** Grayscale **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Grayscale</h2>
+    <!-- *************** Grayscale **************** -->
+
+    <br />
+    <br />
+    <!--grayscale-* -->
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-32 h-32 grayscale-0 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 h-32 grayscale bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Hue Rotate **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Hue Rotate</h2>
+    <!-- *************** Hue Rotate **************** -->
+    <br />
+    <br />
+    <!--hue-rotate-* -->
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-32 hue-rotate-0 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 hue-rotate-15 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 hue-rotate-30 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 hue-rotate-60 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 hue-rotate-90 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 hue-rotate-180 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Invert **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Invert</h2>
+    <!-- *************** Invert **************** -->
+
+    <br />
+    <br />
+    <!--invert-* -->
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-32 invert-0 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 invert h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Saturate **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Saturate</h2>
+    <!-- *************** Saturate **************** -->
+
+    <br />
+    <br />
+    <!-- saturate-* -->
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-32 saturate-0 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 saturate-50 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 saturate-100 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 saturate-150 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 saturate-200 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+    </div>
+    <br />
+    <br />
+
+    <!-- ***************  **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Sepia</h2>
+    <!-- *************** Sepia **************** -->
+    <br />
+    <br />
+    <!-- Sepia-* -->
+    <div class="flex justify-between space-x-4">
+      <div
+        class="w-32 sepia-0 h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+      <div
+        class="w-32 sepia h-32 bg-cover bg-[url('../src/image-1.jpg')]"
+      ></div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Backdrop Blur **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Blur</h2>
+    <!-- *************** Backdrop Blur **************** -->
+
+    <div class="flex justify-between">
+      <div class="relative">
+        <div class="backdrop-blur-sm absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-blur-md absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-blur-xl absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+    </div>
+
+
+    <!-- *************** Backdrop Brightness **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Brightness</h2>
+    <!-- *************** Backdrop Brightness **************** -->
+
+
+    <div class="flex justify-between">
+      <div class="relative">
+        <div class="backdrop-brightness-0 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-brightness-50 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-brightness-75 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-brightness-100 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-brightness-200 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+    </div>
+
+    <!-- *************** Backdrop Contrast **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Contrast</h2>
+    <!-- *************** Backdrop Contrast **************** -->
+
+    <div class="flex justify-between">
+      <div class="relative">
+        <div class="backdrop-contrast-0 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-contrast-50 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-contrast-75 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-contrast-100 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-contrast-200 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+    </div>
+    <!-- *************** Backdrop Grayscale **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Grayscale</h2>
+    <!-- *************** Backdrop Grayscale **************** -->
+    <div class="flex justify-between">
+      <div class="relative">
+        <div class="backdrop-grayscale-0 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-grayscale absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      
+    </div>
+    <!-- *************** Backdrop Hue Rotate **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Hue Rotate</h2>
+    <!-- *************** Backdrop Hue Rotate **************** -->
+    <div class="flex justify-between">
+      <div class="relative">
+        <div class="backdrop-hue-rotate-0 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-hue-rotate-15 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-hue-rotate-30 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-hue-rotate-60 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-hue-rotate-90 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+    </div>
+    <!-- *************** Backdrop Invert **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Invert</h2>
+    <!-- *************** Backdrop Invert **************** -->
+
+    <div class="flex justify-between">
+      <div class="relative">
+        <div class="backdrop-invert-0 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-invert absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      
+    </div>
+    <!-- *************** Backdrop Opacity **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Opacity</h2>
+    <!-- *************** Backdrop Opacity **************** -->
+    <div class="flex justify-between">
+      <div class="relative">
+        <div class="backdrop-opacity-0 backdrop-invert absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-opacity-20 backdrop-invert absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-opacity-40 backdrop-invert absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-opacity-80 backdrop-invert absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-opacity-100 backdrop-invert absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+    </div>
+    <!-- *************** Backdrop Saturate **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Saturate</h2>
+    <!-- *************** Backdrop Saturate **************** -->
+    <!-- *************** Backdrop Sepia **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Backdrop Sepia</h2>
+    <!-- *************** Backdrop Sepia **************** -->
+
     
-</body>
+    <div class="flex justify-between">
+      <div class="relative">
+        <div class="backdrop-sepia-0 absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      <div class="relative">
+        <div class="backdrop-sepia absolute top-[25px] left-[25px] h-20 w-20 bg-white/30"></div>
+        <img src="../src/image-1.jpg" class="w-40 h-40"  alt="">
+      </div>
+      
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
 </html>
