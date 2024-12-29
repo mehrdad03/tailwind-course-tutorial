@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -553,3 +553,92 @@ video {
 [hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
+
+@font-face {
+  font-family: 'vazir';
+
+  src: url(../src/fonts/Vazir.eot);
+
+  src: url(../src/fonts/Vazir.woff) format('woff');
+
+  src: url(../src/fonts/Vazir.woff2) format('woff2');
+
+  src: url(../src/fonts/Vazir.ttf) format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'vazir';
+
+  src: url(../src/fonts/Vazir-Bold.eot);
+
+  src: url(../src/fonts/Vazir-Bold.woff) format('woff');
+
+  src: url(../src/fonts/Vazir-Bold.woff2) format('woff2');
+
+  src: url(../src/fonts/Vazir-Bold.ttf) format('truetype');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.fill-red-700 {
+  fill: #b91c1c;
+}
+
+.stroke-indigo-500 {
+  stroke: #6366f1;
+}
+
+.stroke-red-500 {
+  stroke: #ef4444;
+}
+
+.stroke-1 {
+  stroke-width: 1;
+}
+
+.stroke-0 {
+  stroke-width: 0;
+}
+
+.stroke-2 {
+  stroke-width: 2;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-blue-950 {
+  --tw-text-opacity: 1;
+  color: rgb(23 37 84 / var(--tw-text-opacity, 1));
+}
+
+.text-red-950 {
+  --tw-text-opacity: 1;
+  color: rgb(69 10 10 / var(--tw-text-opacity, 1));
+}
+
