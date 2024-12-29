@@ -1,12 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10-Transforms</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="p-5">
+    <h1 class="font-bold text-4xl text-blue-950 mb-3">Transforms</h1>
+    <br />
+
+    <!-- *************** Scale **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Scale</h2>
+    <!-- *************** Scale **************** -->
+    <!-- scale-*, scale-x-* -->
+    <br />
+    <br />
+
+    <div class="flex justify-between">
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-50" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-125" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-150" alt="" />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="flex justify-between">
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-x-50" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-x-125" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-x-150" alt="" />
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <div class="flex justify-between">
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-y-50" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-y-125" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full scale-y-150" alt="" />
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <!-- *************** Rotate **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Rotate</h2>
+    <!-- *************** Rotate **************** -->
+    <!-- rotate-* -->
+    <div class="flex justify-between">
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full rotate-45" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full rotate-90" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full rotate-180" alt="" />
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- *************** Translate **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Translate</h2>
+    <!-- *************** Translate **************** -->
+    <div class="flex justify-between bg-red-500">
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full translate-y-10" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full -translate-y-10" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full -translate-x-10" alt="" />
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- *************** Skew **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Skew</h2>
+    <!-- *************** Skew **************** -->
+    <!-- skew-x-* -->
+    <div class="flex justify-between bg-red-500">
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full skew-y-6" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full skew-y-12" alt="" />
+      </div>
+      <div class="h-32 w-32">
+        <img src="../src/image-1.jpg" class="w-full skew-x-12" alt="" />
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- *************** Transform Origin **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Transform Origin</h2>
+    <!-- *************** Transform Origin **************** -->
+    <!-- skew-x-* -->
+    <div class="flex justify-between">
+      <div class="h-32 w-32 bg-red-500 p-5">
+        <img
+          src="../src/image-1.jpg"
+          class="w-full origin-center rotate-45"
+          alt=""
+        />
+      </div>
+      <div class="h-32 w-32 bg-red-500">
+        <img
+          src="../src/image-1.jpg"
+          class="w-full origin-top-left rotate-12"
+          alt=""
+        />
+      </div>
+      <div class="h-32 w-32 bg-red-500">
+        <img
+          src="../src/image-1.jpg"
+          class="w-full origin-bottom-right rotate-12"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <!-- Hover, focus, and other states -->
+
+    <div class="flex justify-between">
+      <div class="h-32 w-32 bg-red-500 p-5">
+        <img
+          src="../src/image-1.jpg"
+          class="w-full origin-center rotate-0 hover:rotate-45"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
 </html>
