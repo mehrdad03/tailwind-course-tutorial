@@ -1,12 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./app.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13-Flexbox & Grid</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body class="p-5">
+    <h1 class="font-bold text-4xl text-blue-950 mb-3">Flexbox & Grid</h1>
+    <br />
+
+    <!-- *************** Flex Basis **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Flex Basis</h2>
+    <!-- *************** Flex Basis **************** -->
+    <!-- Setting the flex basis | basis-* -->
+
+    <div class="flex space-x-2">
+      <div class="bg-blue-600 p-2 basis-1/4 text-white">01</div>
+      <div class="bg-blue-600 p-2 basis-1/4 text-white">02</div>
+      <div class="bg-blue-600 p-2 basis-1/2 text-white">03</div>
+    </div>
+
+    <br />
+    <br />
+    <!-- *************** Flex Direction **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Flex Direction</h2>
+    <!-- *************** Flex Direction **************** -->
+
+    <!-- Row | flex-row -->
+
+    <div class="flex space-x-2 flex-row">
+      <div class="bg-red-600 p-2 text-white">01</div>
+      <div class="bg-red-600 p-2 text-white">02</div>
+      <div class="bg-red-600 p-2 text-white">03</div>
+    </div>
+    <br />
+    <br />
+    <!-- Row reversed | flex-row-reverse -->
+    <div class="flex flex-row-reverse">
+      <div class="bg-amber-600 p-2 ml-2 text-white">01</div>
+      <div class="bg-amber-600 p-2 ml-2 text-white">02</div>
+      <div class="bg-amber-600 p-2 ml-2 text-white">03</div>
+    </div>
+    <br />
+    <br />
+    <!-- Column | flex-col -->
+    <div class="flex flex-col space-y-2">
+      <div class="bg-green-600 p-2 ml-2 text-white">01</div>
+      <div class="bg-green-600 p-2 ml-2 text-white">02</div>
+      <div class="bg-green-600 p-2 ml-2 text-white">03</div>
+    </div>
+    <br />
+    <br />
+    <!-- Column reversed | flex-col-reverse -->
+    <div class="flex flex-col-reverse">
+      <div class="bg-green-600 p-2 mb-2 text-white">01</div>
+      <div class="bg-green-600 p-2 mb-2 text-white">02</div>
+      <div class="bg-green-600 p-2 mb-2 text-white">03</div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Flex Wrap **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Flex Wrap</h2>
+    <!-- *************** Flex Wrap **************** -->
+    <!-- Don’t wrap | flex-nowrap -->
+    <div class="flex flex-nowrap space-x-2">
+      <div class="bg-green-600 p-2 w-[500px] flex-none mb-2 text-white">01</div>
+      <div class="bg-green-600 p-2 w-[500px] flex-none mb-2 text-white">02</div>
+      <div class="bg-green-600 p-2 w-[1000px] flex-none mb-2 text-white">
+        03
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- Wrap normally | flex-wrap -->
+    <div class="flex flex-wrap space-x-2">
+      <div class="bg-green-600 p-2 w-[500px] flex-none mb-2 text-white">01</div>
+      <div class="bg-green-600 p-2 w-[500px] flex-none mb-2 text-white">02</div>
+      <div class="bg-green-600 p-2 w-[1000px] flex-none mb-2 text-white">
+        03
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- Wrap reversed | flex-wrap-reverse -->
+    <div class="flex flex-wrap-reverse space-x-2">
+      <div class="bg-green-600 p-2 w-[500px] flex-none mb-2 text-white">01</div>
+      <div class="bg-green-600 p-2 w-[500px] flex-none mb-2 text-white">02</div>
+      <div class="bg-green-600 p-2 w-[1000px] flex-none mb-2 text-white">
+        03
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <!-- *************** Flex Grow **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Flex Grow</h2>
+    <!-- *************** Flex Grow **************** -->
+    <!-- Grow | grow  -->
+    <div class="flex space-x-2">
+      <div class="bg-purple-600 flex-none p-2 mb-2 text-white">01</div>
+      <div class="bg-purple-600 p-2 grow mb-2 text-white">02</div>
+      <div class="bg-purple-600 p-2 mb-2 flex-none text-white">03</div>
+    </div>
+    <!-- Don’t grow | grow-0 -->
+    <div class="flex space-x-2">
+      <div class="bg-black flex-none w-14 p-2 mb-2 text-white">01</div>
+      <div class="bg-black shrink p-2 w-64 mb-2 text-white">02</div>
+      <div class="bg-black flex-none w-14 p-2 mb-2 text-white">03</div>
+    </div>
+    <br />
+    <br />
+
+    <!-- *************** Flex Shrink **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Flex Shrink</h2>
+    <!-- *************** Flex Shrink **************** -->
+    <!-- Shrink | shrink -->
+    <div class="flex space-x-2">
+      <div class="bg-black flex-none w-14 p-2 mb-2 text-white">01</div>
+      <div class="bg-black shrink p-2 w-64 mb-2 text-white">02</div>
+      <div class="bg-black flex-none w-14 p-2 mb-2 text-white">03</div>
+    </div>
+    <br />
+    <br />
+    <!-- Don’t shrink | shrink-0 -->
+    <div class="flex space-x-2">
+      <div class="bg-black flex-none w-14 p-2 mb-2 text-white">01</div>
+      <div class="bg-black shrink-0 p-2 w-64 mb-2 text-white">02</div>
+      <div class="bg-black flex-none w-14 p-2 mb-2 text-white">03</div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <!-- *************** Order **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Order</h2>
+    <!-- *************** Order **************** -->
+    <!-- Ordering flex and grid items |  order-*-->
+    <div class="flex space-x-2">
+      <div class="bg-pink-400 flex-none w-14 p-2 mb-2 text-white">01</div>
+      <div class="bg-pink-400 shrink p-2 w-64 mb-2 text-white">02</div>
+      <div class="bg-pink-400 order- flex-none w-14 p-2 mb-2 text-white">
+        03
+      </div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Grid Template Columns **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Grid Template Columns</h2>
+    <!-- *************** Grid Template Columns **************** -->
+    <!-- Specifying the columns in a grid | grid-cols-* -->
+
+    <div class="grid grid-cols-3 gap-3">
+      <div class="p-2 bg-purple-700 rounded-md text-white">01</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">02</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">03</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">04</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">05</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">06</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">07</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">08</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">08</div>
+    </div>
+
+    <br />
+    <br />
+    <!-- *************** Grid Column Start / End **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Grid Column Start / End</h2>
+    <!-- *************** Grid Column Start / End **************** -->
+    <!-- Spanning columns | col-span-* -->
+    <div class="grid grid-cols-3 gap-3">
+      <div class="p-2 bg-purple-700 rounded-md text-white">01</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">02</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">03</div>
+      <div class="p-2 bg-black rounded-md col-span-2 text-white">04</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">05</div>
+      <div class="p-2 bg-red-700 rounded-md col-span-3 text-white">06</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">07</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">08</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">08</div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Grid Template Rows **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Grid Template Rows</h2>
+    <!-- *************** Grid Template Rows **************** -->
+    <!-- Specifying the rows in a grid  | grid-rows-* -->
+    <br />
+    <br />
+    <div class="grid grid-rows-3 grid-flow-col gap-3">
+      <div class="p-2 bg-amber-700 rounded-md text-white">01</div>
+      <div class="p-2 bg-amber-700 rounded-md text-white">02</div>
+      <div class="p-2 bg-amber-700 rounded-md text-white">03</div>
+      <div class="p-2 bg-amber-700 rounded-md text-white">04</div>
+      <div class="p-2 bg-amber-700 rounded-md text-white">05</div>
+      <div class="p-2 bg-amber-700 rounded-md text-white">06</div>
+      <div class="p-2 bg-amber-700 rounded-md text-white">07</div>
+      <div class="p-2 bg-amber-700 rounded-md text-white">08</div>
+      <div class="p-2 bg-amber-700 rounded-md text-white">09</div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Gap **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Gap</h2>
+    <!-- *************** Gap **************** -->
+    <!-- Setting the gap between elements  | gap-* -->
+    <!-- Changing row and column gaps independently | gap-x-* and gap-y-* -->
+    <div class="grid grid-cols-3 gap-2">
+      <div class="p-2 bg-purple-700 rounded-md text-white">01</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">02</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">03</div>
+      <div class="p-2 bg-black rounded-md col-span-2 text-white">04</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">05</div>
+      <div class="p-2 bg-red-700 rounded-md col-span-3 text-white">06</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">07</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">08</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">08</div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Gap **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Gap</h2>
+    <!-- *************** Gap **************** -->
+    <!-- Setting the gap between elements  | gap-* -->
+    <div class="grid grid-cols-3 gap-2">
+      <div class="p-2 bg-purple-700 rounded-md text-white">01</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">02</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">03</div>
+      <div class="p-2 bg-black rounded-md col-span-2 text-white">04</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">05</div>
+      <div class="p-2 bg-red-700 rounded-md col-span-3 text-white">06</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">07</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">08</div>
+      <div class="p-2 bg-purple-700 rounded-md text-white">08</div>
+    </div>
+    <br />
+    <br />
+    <!-- *************** Justify Content **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Justify Content</h2>
+    <!-- *************** Justify Content **************** -->
+    <!-- Justify Start-->
+    <!-- Justify Center-->
+    <!-- Justify End-->
+    <!-- Justify between-->
+    <!-- Justify Space around-->
+    <!-- Justify Space evenly-->
+    <!-- Justify Stretch-->
+
+    <br />
+    <br />
+    <!-- *************** Justify Content **************** -->
+    <h2 class="font-bold text-xl text-red-950 mb-3">Justify Content</h2>
+    <!-- *************** Justify Content **************** -->
+    <!-- justify-items-start-->
+    <!-- Justify Center-->
+    <!-- Justify End-->
+    <!-- Justify between-->
+    <!-- Justify Space around-->
+    <!-- Justify Space evenly-->
+    <!-- Justify Stretch-->
+    <br />
+    <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
 </html>
